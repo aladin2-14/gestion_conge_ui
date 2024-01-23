@@ -1,11 +1,10 @@
-<script >
+<script>
 
 </script>
 
 <template>
-  <router-view></router-view>
+  <div>helloo employer</div>
 </template>
 
 <style scoped>
-
 </style>

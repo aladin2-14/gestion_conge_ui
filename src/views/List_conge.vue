@@ -1,9 +1,10 @@
-<script >
+<script>
 
 </script>
 
 <template>
-  <router-view></router-view>
+  <div>liste conge
+  </div>
 </template>
 
 <style scoped>
