@@ -1,5 +1,24 @@
 <script>
+export default {
+  data() {
+    return {
+      troisVisible: false
+    };
+  },
+  methods: {
+    ajouterEmploye() {
 
+    },
+    ajouterConge() {
+      this.troisVisible = !this.troisVisible;
+    },
+    modifier() {
+
+    },
+    supprimer() {
+    }
+  }
+};
 </script>
 
 <template>
@@ -12,7 +31,7 @@
             <p><strong>Liste des utilisateur</strong></p>
             <div class="un_un">
                 <input type="text" placeholder="Chercher...">
-                <button>Ajouter Emploiyer</button>
+                <button @click="ajouterEmploye">Ajouter Emploiyer</button>
 
             </div>
         </div>
@@ -20,7 +39,7 @@
         <div class="deux">
             <table>
                 <thead>
-                    <tr>
+                    <tr>    
                         <td>NOM</td>
                         <td>PRENOM</td>
                         <td>AGE</td>
@@ -38,9 +57,9 @@
                         <td>F</td>
                         <td>pas en coger</td>
                         <td>
-                            <button id="sortillege">Ajouter un conger</button>
-                            <button id="invocation">Modifier</button>
-                            <button id="multitude">Supprimer</button>
+                            <button id="sortillege" @click="ajouterConge">Ajouter un conger</button>
+                            <button id="invocation" @click="modifier">Modifier</button>
+                            <button id="multitude" @click="supprimer">Supprimer</button>
                         </td>
 
                     </tr>
@@ -51,9 +70,9 @@
                         <td>F</td>
                         <td>pas en coger</td>
                         <td>
-                            <button id="sortillege">Ajouter un conger</button>
-                            <button id="invocation">Modifier</button>
-                            <button id="multitude">Supprimer</button>
+                            <button id="sortillege" @click="ajouterConge">Ajouter un conger</button>
+                            <button id="invocation" @click="modifier">Modifier</button>
+                            <button id="multitude" @click="supprimer">Supprimer</button>
                         </td>
 
                     </tr>
@@ -107,7 +126,7 @@ body {
 
 .un {
     display: flex;
-    
+    margin-top: 2vh;
 }
 
 .un p {
@@ -147,7 +166,7 @@ body {
 
 .deux {
     width: 100%;
-    height: 130vh;
+    height: 80vh;
     margin-top: 1%;
     margin-left: 3%;
 
