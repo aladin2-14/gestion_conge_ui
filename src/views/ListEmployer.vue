@@ -1,23 +1,9 @@
 <script>
+import Ajouteremployer from "../views/Ajouteremployer.vue"
+import Modifier from "../views/Modifier.vue"
+import Supprimer from "../views/Supprimer.vue"
 export default {
-  data() {
-    return {
-      troisVisible: false
-    };
-  },
-  methods: {
-    ajouterEmploye() {
 
-    },
-    ajouterConge() {
-      this.troisVisible = !this.troisVisible;
-    },
-    modifier() {
-
-    },
-    supprimer() {
-    }
-  }
 };
 </script>
 
