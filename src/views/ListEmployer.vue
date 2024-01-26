@@ -1,10 +1,4 @@
 <script>
-import Ajouteremployer from "../views/Ajouteremployer.vue"
-import Modifier from "../views/Modifier.vue"
-import Supprimer from "../views/Supprimer.vue"
-export default {
-
-};
 </script>
 
 <template>
